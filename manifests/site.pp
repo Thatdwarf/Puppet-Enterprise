@@ -26,5 +26,5 @@ File { backup => false }
 
 node default {
 include apache
-include mysql
+include '::mysql::server'
 }
