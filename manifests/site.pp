@@ -24,9 +24,8 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
+
 node default {
-  node default {
 include apache
 include '::mysql::server'
-}
 }
