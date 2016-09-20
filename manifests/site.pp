@@ -25,7 +25,8 @@ File { backup => false }
 # specified in the console for that node.
 
 node default {
-  # This is where you can declare classes for all nodes.
-  # Example:
-  #   class { 'my_class': }
+  node default {
+include apache
+include '::mysql::server'
+}
 }
