@@ -27,4 +27,5 @@ File { backup => false }
 node default {
 include apache
 include '::mysql::server'
+include git
 }
